@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Dados da Carta 1
+
     char estado1;
     char codigo1[10];
     char nomeCidade1[100];
@@ -10,7 +10,6 @@ int main() {
     float pib1;
     int pontosTuristicos1;
 
-    // Dados da Carta 2
     char estado2;
     char codigo2[10];
     char nomeCidade2[100];
@@ -19,7 +18,6 @@ int main() {
     float pib2;
     int pontosTuristicos2;
 
-    // Entrada para Carta 1
     printf("Digite o estado da Carta 1: ");
     scanf(" %c", &estado1);
     printf("Digite o código da Carta 1: ");
@@ -51,15 +49,12 @@ int main() {
     printf("Digite o número de pontos turísticos da Carta 2: ");
     scanf("%d", &pontosTuristicos2);
 
-    // Cálculos Carta 1
     float densidade1 = populacao1 / area1;
     float pibPerCapita1 = (pib1 * 1000000000) / populacao1;
 
-    // Cálculos Carta 2
     float densidade2 = populacao2 / area2;
     float pibPerCapita2 = (pib2 * 1000000000) / populacao2;
 
-    // Saída Carta 1
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -71,7 +66,6 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
 
-    // Saída Carta 2
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
