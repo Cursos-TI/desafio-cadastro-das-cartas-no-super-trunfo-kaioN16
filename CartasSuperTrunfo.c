@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Estrutura para armazenar os dados de uma carta
 struct Carta {
     char estado;
     char codigo[4];
@@ -15,7 +14,6 @@ int main() {
     struct Carta carta1;
     struct Carta carta2;
 
-    // Leitura dos dados da Carta 1
     printf("Digite os dados da Carta 1:\n");
     printf("Estado (letra de A a H): ");
     scanf(" %c", &carta1.estado);
@@ -38,7 +36,6 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &carta1.numPontosTuristicos);
 
-    // Leitura dos dados da Carta 2
     printf("\nDigite os dados da Carta 2:\n");
     printf("Estado (letra de A a H): ");
     scanf(" %c", &carta2.estado);
@@ -61,7 +58,6 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &carta2.numPontosTuristicos);
 
-    // Exibição dos dados
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", carta1.estado);
     printf("Código: %s\n", carta1.codigo);
